@@ -68,7 +68,7 @@ Now you are registered and ready to make transaction to others wallets :-
 
 ```
 const tx3 = new Transaction(yourWalletAddress, gKishanWalletAddress, 500);
-tx2.signTransaction(yourKey);
+tx3.signTransaction(yourKey);
 electroBucks.addTransaction(tx3);
 ```
 
@@ -96,5 +96,4 @@ Run the script :-
 ```
 node src/main.js
 ```
-
 
