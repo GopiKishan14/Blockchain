@@ -52,3 +52,25 @@ console.log(`Balance of gKishan is ${electroBucks.getBalanceOfAddress(gKishanWal
 // Check if the chain is valid
 console.log();
 console.log('Blockchain valid?', electroBucks.isChainValid() ? 'Yes' : 'No');
+
+//wait fuction , just for fun
+
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+   }
+ }
+
+console.log("\n\n");
+for(var i=0 ; i< 50 ; i++){
+    wait(20);
+    process.stdout.write("#");
+}
+console.log("\nyour results below\n");
+
+/*
+* Add your code below
+*/
+
