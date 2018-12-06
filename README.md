@@ -41,4 +41,60 @@ npm install
 
 This installs the dependencies in the local node_modules folder.
 
+### Testing 
+
+#### Generating your own wallet-Address:
+```
+node src/keygenerator.js
+```
+
+```
+This creates a new private and public key pair.
+Save your private key. Certain Keys are already given in *src/keys.txt* for exporarion.
+The public key is your wallet Address and the private key is used to sign the transaction.
+```
+
+#### Making a transaction :-
+
+Add the following lines of code at end 
+
+```
+const yourKey = ec.keyFromPrivate('<your-private-key>');
+
+const yourWalletAddress = yourKey.getPublic('hex');
+```
+
+Now you are registered and ready to make transaction to others wallets :-
+
+```
+const tx3 = new Transaction(yourWalletAddress, gKishanWalletAddress, 500);
+tx2.signTransaction(yourKey);
+electroBucks.addTransaction(tx3);
+```
+
+You may add several transactions in similar way.
+Then , mine the block :-
+
+```
+electroBucks.minePendingTransactions(gKishanWalletAddress);
+```
+This will add extra 100 as mining reward to my wallet. You can pass your own walletAdd to get reward.
+
+You can change the difficulty of mining. Go and explore [**src/Blockchain**](https://github.com/GopiKishan14/Blockchain/blob/master/src/Blockchain.js)  
+You can find it under Blockchain class.
+
+Check the receiver's and your balance :-
+
+```
+console.log(`Balance of gKishan is ${electroBucks.getBalanceOfAddress(gKishanWalletAddress)}`);
+
+console.log(`My Balance is ${electroBucks.getBalanceOfAddress(yourWalletAddress)}`);
+```
+
+Run the script :-
+
+```
+node src/main.js
+```
+
 
