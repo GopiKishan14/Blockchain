@@ -31,6 +31,7 @@ cd Blockchain
 ```
 
 Install dependencies :-
+
 Run in terminal 
 
 ```
@@ -40,6 +41,10 @@ npm install
 (in package directory, no arguments):
 
 This installs the dependencies in the local node_modules folder.
+
+*Then* , 
+`npm start`
+ You can see certain transactions are already made.
 
 ### Testing 
 
@@ -80,7 +85,7 @@ electroBucks.minePendingTransactions(gKishanWalletAddress);
 ```
 This will add extra 100 as mining reward to my wallet. You can pass your own walletAdd to get reward.
 
-You can change the difficulty of mining. Go and explore [**src/Blockchain**](https://github.com/GopiKishan14/Blockchain/blob/master/src/Blockchain.js)  
+You can change the difficulty of mining. Go ahead and explore [**src/Blockchain**](https://github.com/GopiKishan14/Blockchain/blob/master/src/Blockchain.js)  
 You can find it under Blockchain class.
 
 Check the receiver's and your balance :-
@@ -96,4 +101,17 @@ Run the script :-
 ```
 node src/main.js
 ```
+*OR*
+```
+npm start
+```
+## Feedback
+
+All kinds of feedback (code style, bugs, comments etc.) is welcome. Please open an [*Issue*](https://github.com/GopiKishan14/Blockchain/issues) on this Repository.
+
+## Contribution Guidelines
+
+If you are familiar with basics of contributing to github repositories, feel free to skip this section. For total beginners who landed up here, before contributing, take a look at the [blog-post](https://channelcs.github.io/best-practices-in-a-collaborative-environment.html) to get started. Peace out!
+
+
 
