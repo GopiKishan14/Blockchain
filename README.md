@@ -105,6 +105,13 @@ node src/main.js
 ```
 npm start
 ```
+## Learning Resource
+
+A very intuitive short video lecture is presented on **3Blue1Brown** on various concepts used here.
+
+[![Visit 3Blue1Brown](http://img.youtube.com/vi/bBC-nXj3Ng4/0.jpg)](http://www.youtube.com/watch?v=bBC-nXj3Ng4 "Cryptocurrency")
+
+
 ## Feedback
 
 All kinds of feedback (code style, bugs, comments etc.) is welcome. Please open an [*Issue*](https://github.com/GopiKishan14/Blockchain/issues) on this Repository.
